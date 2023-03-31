@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonho Pantaneiro</title>
+
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Pantanal_Mato_Grosso_Brasil.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            margin-bottom: 5vw;
+        }
+
+        header h1 {
+            font-size: 50px;
+            text-align: center;
+            color: rgb(96, 248, 248);
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            background-color: rgba(170, 170, 170, 0.589);
+            max-width: 700px;
+            max-height: 700px;
+            width: 700px;
+            height: 700px;
+            border-radius: 1vw;
+            border: 1px 1px 1px solid black;
+        }
+
+        form h1 {
+            display: flex;
+            margin: auto;
+            text-align: center;
+            color: rgb(37, 37, 37);
+            font-size: 25px;
+            text-align: center;
+        }
+
+        form h3 {
+            display: flex;
+            margin: auto;
+            font-size: 20px;
+        }
+
+        form>input {
+            display: flex ;
+            margin: auto;
+            max-width: 600px;
+            max-height: 600px;
+            width: 200px;
+            height: 20px;
+            border-radius: 7px;
+
+        }
+
+         #button{
+            max-width: 200px;
+            width: 60px;
+            max-height: 100px;
+            height: 25px;
+            font-size: 12px;
+            display: block;
+            margin: auto;
+            margin-top: 1px;
+            padding-top: 0.3px;
+            border-radius: 1px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+
+        #button:hover {
+            background-color: rgb(11, 48, 94);
+            color: azure;
+        }
+
+        #cadastrar {
+            display: flex;
+            padding: auto;
+            width: 70px;
+            height: 25px;
+            margin-top: 15px;
+            border: 1px solid black;
+            border-radius: 7px;
+        }
+
+        #cpf {
+            width: 150px;
+        }
+
+        #rg {
+            width: 100px;
+        }
+
+        #estadia {
+            width: 100px;
+            height: 20px;
+            min-height: 20px;
+        }
+
+        #estadia2 {
+            width: 100px;
+            height: 20px;
+            min-height: 20px;
+        }
+
+        #quartos {
+            width: 30px;
+        }
+
+        #pessoas {
+            width: 30px;
+
+        }
+        @media (min-width: 280px) and (max-width: 767px) {
+           form h1{
+                font-size: 30px;	
+            }
+		header h1{
+		text-align:center;	
+}
+        }
+    </Style>
+
+</head>
+
+<body>
+    <header>
+        <h1> Sonho Pantaneiro </h1>
+    </header>
+    <form name="request" action="agendamento.php" method="post">
+        <h1>Cadastrar Agendamento</h1>
+        <br>
+        <h3>Nome:</h3>
+        <input type="text" id="name" name="name" required>
+        <h3>Sobrenome:</h3>
+        <input type="text" id="sobrenome" name="last_name" required>
+        <h3>E-mail:</h3>
+        <input type="email" id="Email" name="email" required>
+        <h3>CPF:</h3>
+        <input type="text" id="cpf" name="cpf" required>
+        <h3>RG:</h3>
+        <input type="text" id="rg" name="rg" required>
+        <h3>Tempo de estadia</h3>
+        <input type="date" id="estadia" name="inicio" required>
+        <input type="date" id="estadia2" name="fim" required>
+        <h3>Quantidade de quartos</h3>
+        <input type="number" id="quartos" name="quarto" required>
+        <h3>Quantidade de pessoas</h3>
+        <input type="number" id="pessoas" name="pessoa" required>
+        <input type="submit" id="button" value="Cadastrar">
+
+    </form>
+
+</body>
+
+</html>
+
+
+<!-- onclick="alert('Agendamento Cadastrado')" -->
