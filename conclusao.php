@@ -1,6 +1,17 @@
 <?php
 session_start();
 
+$_SESSION['sessao_iniciada'] = $name;
+
+if (!isset($_SESSION["sessao_iniciada"])){
+    header("Location: Cadastro_efetuado.html");
+}
+
+if (isset($_GET["sair"])){
+    unset($_SESSION["sessao_iniciada"]);
+    header("Location: index.html");
+}
+
 $name = $_GET['name'];
 $last_name = $_GET['last_name'];
 $email = $_GET['email'];
