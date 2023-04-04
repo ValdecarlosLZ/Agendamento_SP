@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
 
-    <style>
+        <style>
         * {
             margin: 0;
             padding: 0;
+        }
+        header {
+            text-align: center;
+        }
+        header>h1{
+            font-size: 50px;
+            margin-top: 0;
+            color: rgb(96, 248, 248);
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
+        }
+        header>h4{
+            color: black;
+            margin-bottom: 0;
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
         }
 
         body {
@@ -36,9 +50,23 @@
             border: 1px 1px 1px solid black;
             margin-top: 70px;
         }
-
-        form>h1 {
+        form>h2{
+            font-size: 15px;
             text-align: center;
+            color: aliceblue;
+            margin-top: 15px;
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
+        }
+        form>h2>img{
+            size: 20px;
+        }
+
+        form>h3 {
+            text-align: center;
+            margin: auto;
+            margin-bottom: 5px;
+            color: aliceblue;
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
         }
         #form {
             max-height: 100vw;
@@ -58,6 +86,7 @@
             display: block;
             margin: auto;
             margin-top: 1px;
+            margin-bottom: 20px;
             padding: auto;
             border-radius: 1px;
             text-decoration: none;
@@ -65,6 +94,7 @@
             color: black;
             background-color: aliceblue;
             border-radius: 10px;
+            border: 1px 1px 1px 1px solid black;
 
         }
         a:hover{
@@ -72,15 +102,18 @@
             color: azure;
         }
     </style>
-</head>
+    </head>
 
-<body>
-    <form>
-        <h1>Deseja fazer seu agendamento?</h1>
-        <img id="form" src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/cadastro.png" alt="">
-        <a href="cadastro.html">Cadastrar</a>
-
-    </form>
-</body>
+    <body>
+        <header>
+            <h4>Pousada</h4>
+            <h1>Sonho Pantaneiro</h1>
+        </header>
+        <form>
+            <h2><img src="" alt="">Localizada na mata da capivara atrás da aldeia nakama elakika</h2>
+            <h3>Deseja fazer seu agendamento?</h3>
+            <a href="cadastro.html">Cadastrar</a>
+        </form>
+    </body>
 
 </html>
