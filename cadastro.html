@@ -69,6 +69,12 @@
             font-size: 20px;
             color: aliceblue;
         }
+        form>h4{
+            display: flex;
+            margin: auto;
+            font-size: 15px;
+            color: rgb(251, 89, 89);
+        }
 
         form>input {
             display: flex ;
@@ -140,7 +146,9 @@
 
         #pessoas {
             width: 30px;
-
+        }
+        #PQ{
+            width: 30px;
         }
         @media (min-width: 280px) and (max-width: 767px) {
            form h1{
@@ -175,10 +183,15 @@
             <input type="date" id="estadia" name="inicio" required>
             <input type="date" id="estadia2" name="fim" required>
             <h3>Quantidade de quartos</h3>
-            <input type="number" id="quartos" name="quarto" required>
+            <input type="number" id="quartos" name="quarto" required> 
+            <h4><i>Caso mais de um quarto</i></h4>
+            <h3>Quantidade de pessoas por quarto</h3>
+            <input type="number" id="PQ" name="PQ" required>
             <h3>Quantidade de pessoas</h3>
             <input type="number" id="pessoas" name="pessoa" required>
-            <input type="submit" id="button" value="Cadastrar">
+
+
+            <input type="submit" id="button" value="Próximo">
 
         </form>
 
