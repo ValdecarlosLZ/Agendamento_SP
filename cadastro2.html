@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sonho Pantaneiro</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+        }
+        header>h1{
+            font-size: 50px;
+            margin-top: 0;
+            color: rgb(96, 248, 248);
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
+            
+        }
+        header>h4{
+            color: black;
+            margin-bottom: 0;
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
+        }
+
+        body {
+            background-image: url(https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/Pantanal_Mato_Grosso_Brasil.png);
+            background-attachment: fixed;
+            background-size: 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-repeat: no-repeat;
+        }
+        body>form {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            background-color: rgba(194, 192, 192, 0.392);
+            max-width: 600px;
+            max-height: 650px;
+            width: 600px;
+            height: 600px;
+            border-radius: 1vw;
+            border: 1px 1px 1px solid black;
+            margin-top: 50px;
+        }
+        form h1 {
+            display: flex;
+            margin: auto;
+            text-align: center;
+            color: aliceblue;
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
+            font-size: 25px;            
+        }
+        
+        form h3 {
+            display: flex;
+            margin: auto;
+            font-size: 20px;
+            color: aliceblue;
+        }
+        form>div{
+            display: flexbox;
+            margin: auto;
+            position: relative;
+        }
+        div>#q1{
+            display: flex;
+            margin: auto;
+        }
+        #q1{
+            max-width: 90px;
+            max-height: 180px;
+            width: 80px;
+            height: 120px;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 0;
+        }
+
+        div>h4{
+            text-align: center;
+            color: aliceblue;
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
+        }
+        div>h5{
+            text-align: center;
+            color: aliceblue;
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
+        }
+        div>#q2{
+            display: flex;
+            margin: auto;
+        }
+        #q2{
+            max-width: 200px;
+            max-height: 180px;
+            width: 160px;
+            height: 120px;
+            position: relative;
+            z-index: 2;
+            margin-right: 300px;
+            margin-top: 0;
+        }
+        div>#q3{
+            display: flex;
+            margin: auto;
+        }
+        #q3{
+            max-width: 200px;
+            max-height: 180px;
+            width: 160px;
+            height: 120px;
+            position: relative;
+            z-index: 3;
+            margin-left: 300px;
+            margin-top: 0;
+        }
+        form>input {
+            display: flex ;
+            margin: auto;
+            max-width: 600px;
+            max-height: 600px;
+            text-align: center;
+            width: 80px;
+            height: 20px;
+            border-radius: 7px;
+
+        }
+        #button{
+            max-width: 200px;
+            width: 60px;
+            max-height: 100px;
+            height: 25px;
+            font-size: 12px;
+            display: block;
+            margin: auto;
+            margin-top: 1px;
+            padding-top: 0.3px;
+            border-radius: 1px;
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+
+        #button:hover {
+            background-color: rgb(11, 48, 94);
+            color: azure;
+        }
+
+    </style>
+    </head>
+    <body>
+        <header>
+            <h4>Pousada</h4>
+            <h1>Sonho Pantaneiro</h1>
+        </header>
+        <form>
+            <h1>Cadastrar Agendamento</h1>
+            <br>
+            <h3>Estilo de quarto</h3>
+            <div>
+                <img
+                    src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto1.jpg"
+                    alt="quarto1" id="q1">
+                <h4>Quarto para uma pessoa</h4>
+                <h5>R$100,00 /diaria</h5>
+            </div>
+            <div>
+                <img
+                    src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg"
+                    alt="quarto2" id="q2">
+                <h4>Quarto de casal</h4>
+                <h5>R$150,00 /diaria/pessoa</h5>
+            </div>
+            <div>
+                <img
+                    src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg"
+                    alt="quarto3" id="q3">
+                <h4>Quarto para mais de três pessoas</h4>
+                <h5>R$200,00 /diaria</h5>
+            </div>
+            <input type="submit" id="button" value="Concluir">
+        </form>
+    </body>
+</html>
