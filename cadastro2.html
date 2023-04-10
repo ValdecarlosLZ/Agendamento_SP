@@ -45,8 +45,8 @@
             width: 600px;
             height: 600px;
             border-radius: 1vw;
-            border: 1px 1px 1px solid black;
             margin-top: 50px;
+            margin-bottom: 30px;
         }
         form h1 {
             display: flex;
@@ -91,7 +91,7 @@
         div>h5{
             text-align: center;
             color: aliceblue;
-            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);            
         }
         div>#q2{
             display: flex;
@@ -155,6 +155,12 @@
             background-color: rgb(11, 48, 94);
             color: azure;
         }
+        #quantidade{
+            max-width: 50px;
+            width: 30px;
+            border: 0.2px !important;
+            border-radius: 10px;
+        }
 
     </style>
     </head>
@@ -172,21 +178,25 @@
                     src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto1.jpg"
                     alt="quarto1" id="q1">
                 <h4>Quarto para uma pessoa</h4>
-                <h5>R$100,00 /diaria <input type="checkbox" name="quarto1"></h5>
+                <h5>R$100,00 /diaria <input type="checkbox" name="quarto1">
+                <input type="number" name="QT1" id="quantidade"></h5>
+
             </div>
             <div>
                 <img
                     src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg"
                     alt="quarto2" id="q2">
                 <h4>Quarto de casal</h4>
-                <h5>R$150,00 /diaria/pessoa <input type="checkbox" name="quarto2"></h5>
+                <h5>R$150,00 /diaria/pessoa <input type="checkbox" name="quarto2">
+                <input type="number" name="QT2" id="quantidade"></h5></h5>
             </div>
             <div>
                 <img
                     src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg"
                     alt="quarto3" id="q3">
                 <h4>Quarto para mais de três pessoas</h4>
-                <h5>R$200,00 /diaria <input type="checkbox" name="quarto3"></h5>
+                <h5>R$200,00 /diaria <input type="checkbox" name="quarto3">
+                <input type="number" name="QT3" id="quantidade"></h5></h5>
             </div>
             <input type="submit" id="button" value="Concluir">
         </form>

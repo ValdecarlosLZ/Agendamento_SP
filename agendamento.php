@@ -10,7 +10,6 @@ $cpf = $_POST['cpf'];
 $rg = $_POST['rg'];
 $inicio = $_POST['inicio'];
 $fim = $_POST['fim'];
-$quarto = $_POST['quarto'];
 $pessoa = $_POST['pessoa'];
 
 if(($email != "") && ($cpf >= 11) && ($rg >= 6)){
