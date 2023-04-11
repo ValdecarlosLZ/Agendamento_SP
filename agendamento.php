@@ -8,16 +8,21 @@ $last_name = $_POST['last_name'];
 $email = $_POST['email'];
 $cpf = $_POST['cpf'];
 $rg = $_POST['rg'];
-$inicio = $_POST['inicio'];
-$fim = $_POST['fim'];
-$pessoa = $_POST['pessoa'];
+$tempo = $_POST['tempo'];
+
 
 if(($email != "") && ($cpf >= 11) && ($rg >= 6)){
     header('Location: cadastro2.html');
 }else{ 
 header('Location: index.html?Erro');
 }
-$_SESSION ['session_iniciada'] = $name;
+$_SESSION ['name'] = $name;
+$_SESSION ['last_name'] = $last_name;
+$_SESSION ['email'] = $email;
+$_SESSION ['cpf'] = $cpf;
+$_SESSION ['rg'] = $rg;
+$_SESSION ['tempo'] = $tempo;
+
 
 ?>
 

@@ -52,6 +52,7 @@
             height: 700px;
             border-radius: 1vw;
             border: 1px 1px 1px solid black;
+		    margin-bottom:30px;
         }
 
         form h1 {
@@ -60,7 +61,8 @@
             text-align: center;
             color: aliceblue;
             text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
-            font-size: 25px;            
+            font-size: 25px;
+		    margin-bottom:8px;            
         }
 
         form h3 {
@@ -68,6 +70,7 @@
             margin: auto;
             font-size: 20px;
             color: aliceblue;
+            margin-bottom:2px;
         }
         form>h4{
             display: flex;
@@ -84,6 +87,8 @@
             width: 200px;
             height: 20px;
             border-radius: 7px;
+            margin-bottom:10px;
+            margin-top:5px;
 
         }
 
@@ -134,11 +139,6 @@
             min-height: 20px;
         }
 
-        #estadia2 {
-            width: 100px;
-            height: 20px;
-            min-height: 20px;
-        }
 
         #quartos {
             width: 30px;
@@ -180,12 +180,7 @@
             <h3>RG:</h3>
             <input type="text" id="rg" name="rg" required>
             <h3>Tempo de estadia</h3>
-            <input type="date" id="estadia" name="inicio" required>
-            <input type="date" id="estadia2" name="fim" required>
-            <h3>Quantidade de pessoas</h3>
-            <input type="number" id="pessoas" name="pessoa" required>
-
-
+            <input type="text" id="estadia" name="tempo" required>
             <input type="submit" id="button" value="Próximo">
 
         </form>

@@ -3,8 +3,9 @@ session_start();
 
 $name = $_SESSION['sessao_iniciada'];
 
-if (!isset($_SESSION["sessao_iniciada"])) {
-    // header("Location: Cadastro_efetuado.html");
+if (!isset($_SESSION)) {
+    session_start();
+    }
     $name = $_GET['name'];
     $last_name = $_GET['last_name'];
     $email = $_GET['email'];
@@ -51,9 +52,6 @@ if (!isset($_SESSION["sessao_iniciada"])) {
         echo '$fim';
         echo '$conclusao';
     }
-
-
-}
 
 if (isset($_GET["sair"])) {
     unset($_SESSION["sessao_iniciada"]);
