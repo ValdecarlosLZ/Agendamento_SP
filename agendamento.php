@@ -13,11 +13,11 @@ $fim = $_POST['fim'];
 $pessoa = $_POST['pessoa'];
 
 if(($email != "") && ($cpf >= 11) && ($rg >= 6)){
-    header('Location: Cadastro_efetuado.html');
+    header('Location: cadastro2.html');
 }else{ 
 header('Location: index.html?Erro');
 }
-$_SESSION ['session'] = $name;
+$_SESSION ['session_iniciada'] = $name;
 
 ?>
 
