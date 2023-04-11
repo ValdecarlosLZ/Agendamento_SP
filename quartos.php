@@ -10,16 +10,18 @@ $QT3 = $_POST['QT3'];
 $conclusao = $_POST['conclusao'];
 
 if ($quarto1 = true) {
-    header('Location: ');
-    $conclusao = header('Location: Cadastro_efetuado.html');
+    $conclusão = 100 * $QT1;
+    header('Location: Cadastro_efetuado.html');
+    
 }
 if ($quarto2 = true){
-    header('Location: ');
-    $conclusao = header('Location: Cadastro_efetuado.html');
+    $conclusão = 150 * $QT2;
+    header('Location: Cadastro_efetuado.html');
 }
 if($quarto3 = true){
-    header('Location: ');
-    $conclusao = header('Location: Cadastro_efetuado.html');
+    $conclusao = 200 * $QT3;
+    header('Location: Cadastro_efetuado.html');
+    
 }
 
 
