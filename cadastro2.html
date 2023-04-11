@@ -39,11 +39,12 @@
             display: flex;
             flex-direction: column;
             margin: auto;
+            padding: 10px;
             background-color: rgba(194, 192, 192, 0.392);
             max-width: 600px;
-            max-height: 650px;
+            max-height: 1050px;
             width: 600px;
-            height: 650px;
+            height: 850px;
             border-radius: 1vw;
             margin-top: 50px;
             margin-bottom: 30px;
@@ -164,6 +165,15 @@
             border-radius: 10px;
             margin-bottom: 5px;
         }
+        #pessoas{
+		display:flex;
+		margin:auto;
+        border: 0.2px !important;
+		border-radius:5px;
+        width: 30px;
+		margin-bottom: 10px;
+        }
+
 
     </style>
     </head>
@@ -184,7 +194,7 @@
                 <h5>R$100,00 /diaria <input type="checkbox" name="quarto1"></h5>
                 <input type="number" name="QT1" id="quantidade">
                 <h3>Quantidade de pessoas</h3>
-                <input type="number" id="pessoas" name="pessoa" required>
+                <input type="number" id="pessoas" name="pessoa">
             </div>
             <div>
                 <img
@@ -195,7 +205,7 @@
                         name="quarto2"></h5>
                 <input type="number" name="QT2" id="quantidade">
                 <h3>Quantidade de pessoas</h3>
-                <input type="number" id="pessoas" name="pessoa" required>
+                <input type="number" id="pessoas" name="pessoa">
             </div>
             <div>
                 <img
@@ -205,7 +215,7 @@
                 <h5>R$200,00 /diaria <input type="checkbox" name="quarto3"></h5>
                 <input type="number" name="QT3" id="quantidade">
                 <h3>Quantidade de pessoas</h3>
-                <input type="number" id="pessoas" name="pessoa" required>
+                <input type="number" id="pessoas" name="pessoa">
             </div>
             <input type="submit" id="button" value="Concluir">
         </form>

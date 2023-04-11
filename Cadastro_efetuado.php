@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cadastro Efetuado</title>
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Efetuado</title>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -23,7 +23,8 @@
             text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
 
         }
-        header>h4{
+
+        header>h4 {
             color: black;
             margin-bottom: 0;
             text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
@@ -100,24 +101,30 @@
             color: azure;
         }
     </style>
-    </head>
+</head>
 
-    <body>
-        <header>
-            <h4>Pousada</h4>
-            <h1>Sonho Pantaneiro</h1>
-        </header>
-        <form class="fim">
-            <h1>Agendamento cadastrado com sucesso!</h1>
-            <form action="conclusao.php" method="get" id="get">
-
-                <img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/accept%20(1).png"
-                    alt="CHECK" width="200px">
-                <h5>Deseja adicionar outro agendamento?</h5>
-                <a href="index.html">Adicionar</a>
-            </form>
+<body>
+    <header>
+        <h4>Pousada</h4>
+        <h1>Sonho Pantaneiro</h1>
+    </header>
+    <form class="fim">
+        <h1>Agendamento cadastrado com sucesso!</h1>
+        <form action="conclusao.php" method="get" id="get">
+            <?php echo $name;
+            echo $last_name;
+            echo $email;
+            echo $cpf;
+            echo $rg;
+            echo $tempo;
+            echo $conclusao; ?>
+            <img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/accept%20(1).png" alt="CHECK"
+                width="200px">
+            <h5>Deseja adicionar outro agendamento?</h5>
+            <a href="index.html">Adicionar</a>
         </form>
+    </form>
 
-    </body>
+</body>
 
 </html>
