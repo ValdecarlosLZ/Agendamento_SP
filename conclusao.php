@@ -12,5 +12,5 @@ $receber_cadastro = $stmt->fetchAll(PDO::FETCH_ASSOC);
 //var_dump($receber_cadastro);
 
 
-include "Cadastro_efetuado.php"
+
 ?>
