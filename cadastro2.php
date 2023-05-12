@@ -229,6 +229,7 @@
             <fieldset>
 
                 <?php
+                require_once('canvas.php');
 
                 switch ($Imagem) {
 
@@ -257,7 +258,8 @@
                     Valor:
                     <?php echo $Valor ?>
                 </p>
-                <input type="number" name="QT1" id="quantidade">
+                <input style="margin-left: 47%;margin-bottom: 5px; border: none;" type="checkbox" name="Q" id="">
+                <input type="number" name="QT1" id="quantidade" >
                 <h3>Quantidade de pessoas</h3>
                 <input type="number" id="pessoas" name="pessoa">
             </fieldset>
