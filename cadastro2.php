@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sonho Pantaneiro</title>
-        <style>
-        *{
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonho Pantaneiro</title>
+    <style>
+        * {
             margin: 0;
             padding: 0;
         }
+
         header {
             text-align: center;
         }
-        header>h1{
+
+        header>h1 {
             font-size: 50px;
             margin-top: 0;
             color: rgb(96, 248, 248);
             text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
-            
+
         }
-        header>h4{
+
+        header>h4 {
             color: black;
             margin-bottom: 0;
             text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
@@ -35,6 +39,7 @@
             -o-background-size: cover;
             background-repeat: no-repeat;
         }
+
         body>form {
             display: flex;
             flex-direction: column;
@@ -44,20 +49,21 @@
             max-width: 600px;
             max-height: 1050px;
             width: 600px;
-            height: 850px;
+            height: auto;
             border-radius: 1vw;
             margin-top: 50px;
             margin-bottom: 30px;
         }
+
         form h1 {
             display: flex;
             margin: auto;
             text-align: center;
             color: aliceblue;
             text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
-            font-size: 25px;            
+            font-size: 25px;
         }
-        
+
         form h3 {
             display: flex;
             margin: auto;
@@ -65,16 +71,20 @@
             color: aliceblue;
             text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
         }
-        form>div{
+
+        form>fieldset {
             display: flexbox;
             margin: auto;
+            padding: 3px;
             position: relative;
         }
-        div>#q1{
+
+        fieldset>#q1 {
             display: flex;
             margin: auto;
         }
-        #q1{
+
+        #q1 {
             max-width: 90px;
             max-height: 180px;
             width: 80px;
@@ -84,21 +94,24 @@
             margin-bottom: 0;
         }
 
-        div>h4{
+        fieldset>h4 {
             text-align: center;
             color: aliceblue;
             text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
         }
-        div>h5{
+
+        fieldset>h5 {
             text-align: center;
             color: aliceblue;
-            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);            
+            text-shadow: 3px 3px 7px rgb(0, 0, 0, 0.5);
         }
-        div>#q2{
+
+        fieldset>#q2 {
             display: flex;
             margin: auto;
         }
-        #q2{
+
+        #q2 {
             max-width: 200px;
             max-height: 180px;
             width: 160px;
@@ -108,11 +121,13 @@
             margin-right: 300px;
             margin-top: 0;
         }
-        div>#q3{
+
+        fieldset>#q3 {
             display: flex;
             margin: auto;
         }
-        #q3{
+
+        #q3 {
             max-width: 200px;
             max-height: 180px;
             width: 160px;
@@ -122,9 +137,9 @@
             margin-left: 300px;
             margin-top: 0;
         }
- 
+
         form>input {
-            display: flex ;
+            display: flex;
             margin: auto;
             max-width: 600px;
             max-height: 600px;
@@ -134,7 +149,8 @@
             border-radius: 7px;
 
         }
-        #button{
+
+        #button {
             max-width: 200px;
             width: 60px;
             max-height: 100px;
@@ -156,7 +172,8 @@
             background-color: rgb(11, 48, 94);
             color: azure;
         }
-        #quantidade{
+
+        #quantidade {
             display: flex;
             margin: auto;
             max-width: 50px;
@@ -165,59 +182,124 @@
             border-radius: 10px;
             margin-bottom: 5px;
         }
-        #pessoas{
-		display:flex;
-		margin:auto;
-        border: 0.2px !important;
-		border-radius:5px;
-        width: 30px;
-		margin-bottom: 10px;
+
+        #pessoas {
+            display: flex;
+            margin: auto;
+            border: 0.2px !important;
+            border-radius: 5px;
+            width: 30px;
+            margin-bottom: 10px;
         }
 
-
+        p {
+            margin-left: 0;
+            margin-bottom: 3px;
+            text-align: center;
+            color: aliceblue;
+            background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5) 60%, rgba(255, 255, 255)100%);
+            border: 2px solid black;
+            border-start-end-radius: 10px;
+            border-bottom: 0 !important
+        }
     </style>
-    </head>
-    <body>
-        <header>
-            <h4>Pousada</h4>
-            <h1>Sonho Pantaneiro</h1>
-        </header>
-        <form action="conclusao.php" method="get">
-            <h1>Cadastrar Agendamento</h1>
-            <br>
-            <h3>Estilo de quarto</h3>
-            <div>
-                <img
-                    src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto1.jpg"
-                    alt="quarto1" id="q1">
-                <h4>Quarto para uma pessoa</h4>
-                <h5>R$100,00 /diaria <input type="checkbox" name="quarto1"></h5>
+</head>
+
+<body>
+    <header>
+        <h4>Pousada</h4>
+        <h1>Sonho Pantaneiro</h1>
+    </header>
+    <form action="quartos.php" method="get">
+        <h1>Cadastrar Agendamento</h1>
+        <br>
+        <h3>Estilo de quarto</h3>
+        <?php
+        include "quartos.php";
+
+        foreach ($receber_cadastro as $item) {
+            $Id = $item['Idquartos'];
+            $Imagem = $item['Imagem'];
+            $Nome = $item['Nome'];
+            $Capacidade = $item['Capacidade'];
+            $Valor = $item['Valor'];
+
+
+            ?>
+            <fieldset>
+
+                <?php
+
+                switch ($Imagem) {
+
+                    case $Id = 1:
+                        $img->carregaUrl('https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto1.jpg');
+                        break;
+                    case $Id = 2:
+                        $img->carregaUrl('https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg');
+                        break;
+                    case $Id = 3:
+                        $img->carregaUrl('https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg');
+                        break;
+
+                }
+                ?>
+
+                <p>
+                    Nome:
+                    <?php echo $Nome ?>
+                </p>
+                <p>
+                    Capacidade:
+                    <?php echo $Capacidade ?>
+                </p>
+                <p>
+                    Valor:
+                    <?php echo $Valor ?>
+                </p>
                 <input type="number" name="QT1" id="quantidade">
                 <h3>Quantidade de pessoas</h3>
                 <input type="number" id="pessoas" name="pessoa">
-            </div>
-            <div>
-                <img
-                    src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg"
-                    alt="quarto2" id="q2">
-                <h4>Quarto de casal</h4>
-                <h5>R$150,00 /diaria/pessoa <input type="checkbox"
-                        name="quarto2"></h5>
+            </fieldset>
+            <!-- <fieldset>
+                <img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg" alt="quarto2" id="q2">
+                <p>
+                Nome: <?php echo $Nome ?>
+                </p>
+                <p>
+                Capacidade: <?php echo $Capacidade ?>
+                </p>
+                <p>
+                Valor: <?php echo $Valor ?>
+                </p>
                 <input type="number" name="QT2" id="quantidade">
                 <h3>Quantidade de pessoas</h3>
                 <input type="number" id="pessoas" name="pessoa">
-            </div>
-            <div>
-                <img
-                    src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg"
-                    alt="quarto3" id="q3">
-                <h4>Quarto para mais de três pessoas</h4>
-                <h5>R$200,00 /diaria <input type="checkbox" name="quarto3"></h5>
+            </fieldset>
+            <fieldset>
+                <img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg" alt="quarto3" id="q3">
+                <p>
+                    <?php
+
+                    echo "Nome: " . $Nome . "\n<br>" ?>
+                </p>
+                <p>
+                    <?php
+
+                    echo "Capacidade: " . $Capacidade . "\n<br>" ?>
+                </p>
+                <p>
+                    <?php
+
+                    echo "Valor: " . $Valor . "\n<br>" ?>
+                </p>
                 <input type="number" name="QT3" id="quantidade">
                 <h3>Quantidade de pessoas</h3>
                 <input type="number" id="pessoas" name="pessoa">
-            </div>
+            </fieldset> -->
             <input type="submit" id="button" value="Concluir">
-        </form>
-    </body>
+        <?php } ?>
+    </form>
+</body>
+
 </html>
