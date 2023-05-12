@@ -29,6 +29,6 @@ $stmt->bindValue(':rg',$rg);
 
 $stmt->execute();
 
-    header('Location: cadastro2.html');
+    header('Location: cadastro2.php');
     exit;
     ?>
