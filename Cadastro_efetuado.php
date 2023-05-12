@@ -147,6 +147,7 @@
         <h1>Agendamento cadastrado com sucesso!</h1>
         <form action="conclusao.php" method="get" id="dados">
             <?php
+            include "conclusao.php";
             foreach ($receber_cadastro as $item) {
 
                 $nome_completo = $item['Nome_completo'];
