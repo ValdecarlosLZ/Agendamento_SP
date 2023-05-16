@@ -47,7 +47,7 @@
             padding: 10px;
             background-color: rgba(194, 192, 192, 0.392);
             max-width: 600px;
-            max-height: 1050px;
+            max-height: 2050px;
             width: 600px;
             height: auto;
             border-radius: 1vw;
@@ -75,13 +75,17 @@
         form>fieldset {
             display: flexbox;
             margin: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
             padding: 3px;
             position: relative;
+
         }
 
         fieldset>#q1 {
             display: flex;
             margin: auto;
+            
         }
 
         #q1 {
@@ -158,7 +162,8 @@
             font-size: 12px;
             display: block;
             margin: auto;
-            margin-top: 1px;
+            margin-top: 5px;
+            margin-bottom: 5px;
             padding-top: 0.3px;
             border-radius: 1px;
             text-decoration: none;
@@ -219,7 +224,7 @@
 
         foreach ($receber_cadastro as $item) {
             $Id = $item['Idquartos'];
-            $Imagem = $item['Imagem'];
+            // $Imagem = $_FILES['Imagem'];
             $Nome = $item['Nome'];
             $Capacidade = $item['Capacidade'];
             $Valor = $item['Valor'];
@@ -231,21 +236,20 @@
                 <?php
                 require_once('canvas.php');
 
-                switch ($Imagem) {
-
-                    case $Id = 1:
-                        $img->carregaUrl('https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto1.jpg');
-                        break;
-                    case $Id = 2:
-                        $img->carregaUrl('https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg');
-                        break;
-                    case $Id = 3:
-                        $img->carregaUrl('https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg');
-                        break;
-
+                if($Id = 1) {
+                    $buscar_cadastro = "SELECT * FROM quartos where Id = 1";
+                    echo '<img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto1.jpg" alt="Q1" style="width:120px;margin-left: 20%;margin-bottom: 5%;margin-top: 5%">';
+                }
+                else if($Id = 2) {
+                    $buscar_cadastro = "SELECT * FROM quartos where Id = 2";
+                    echo '<img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg" alt="Q2" style="width:180px;margin-left: 3%;margin-bottom: 5%;margin-top: 5%">';
+                }
+                else if($Id = 3) {     
+                    $buscar_cadastro = "SELECT * FROM quartos where Id = 3";               
+                         echo '<img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg" alt="Q3" style="width:180px;margin-left: 3%;margin-bottom: 5%;margin-top: 5%">';
                 }
                 ?>
-
+                <input style="margin-left: 47%;margin-bottom: 5px; border: none; " type="checkbox" name="check">
                 <p>
                     Nome:
                     <?php echo $Nome ?>
@@ -258,50 +262,17 @@
                     Valor:
                     <?php echo $Valor ?>
                 </p>
-                <input style="margin-left: 47%;margin-bottom: 5px; border: none;" type="checkbox" name="Q" id="">
+                
                 <input type="number" name="QT1" id="quantidade" >
                 <h3>Quantidade de pessoas</h3>
                 <input type="number" id="pessoas" name="pessoa">
             </fieldset>
-            <!-- <fieldset>
-                <img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg" alt="quarto2" id="q2">
-                <p>
-                Nome: <?php echo $Nome ?>
-                </p>
-                <p>
-                Capacidade: <?php echo $Capacidade ?>
-                </p>
-                <p>
-                Valor: <?php echo $Valor ?>
-                </p>
-                <input type="number" name="QT2" id="quantidade">
-                <h3>Quantidade de pessoas</h3>
-                <input type="number" id="pessoas" name="pessoa">
-            </fieldset>
-            <fieldset>
-                <img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg" alt="quarto3" id="q3">
-                <p>
-                    <?php
-
-                    echo "Nome: " . $Nome . "\n<br>" ?>
-                </p>
-                <p>
-                    <?php
-
-                    echo "Capacidade: " . $Capacidade . "\n<br>" ?>
-                </p>
-                <p>
-                    <?php
-
-                    echo "Valor: " . $Valor . "\n<br>" ?>
-                </p>
-                <input type="number" name="QT3" id="quantidade">
-                <h3>Quantidade de pessoas</h3>
-                <input type="number" id="pessoas" name="pessoa">
-            </fieldset> -->
-            <input type="submit" id="button" value="Concluir">
+            
         <?php } ?>
+        <input type="submit" id="button" value="Concluir">
     </form>
 </body>
 
 </html>
+
+<img src="" alt="" style="align-self: center;">
