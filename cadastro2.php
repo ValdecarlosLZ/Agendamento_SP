@@ -85,7 +85,7 @@
         fieldset>#q1 {
             display: flex;
             margin: auto;
-            
+
         }
 
         #q1 {
@@ -224,31 +224,30 @@
 
         foreach ($receber_cadastro as $item) {
             $Id = $item['Idquartos'];
-            // $Imagem = $_FILES['Imagem'];
+            // $Imagem = $item['Imagem'];
             $Nome = $item['Nome'];
             $Capacidade = $item['Capacidade'];
             $Valor = $item['Valor'];
-
-
             ?>
+
             <fieldset>
 
                 <?php
                 require_once('canvas.php');
 
-                if($Id = 1) {
-                    $buscar_cadastro = "SELECT * FROM quartos where Id = 1";
-                    echo '<img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto1.jpg" alt="Q1" style="width:120px;margin-left: 20%;margin-bottom: 5%;margin-top: 5%">';
-                }
-                else if($Id = 2) {
-                    $buscar_cadastro = "SELECT * FROM quartos where Id = 2";
-                    echo '<img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg" alt="Q2" style="width:180px;margin-left: 3%;margin-bottom: 5%;margin-top: 5%">';
-                }
-                else if($Id = 3) {     
-                    $buscar_cadastro = "SELECT * FROM quartos where Id = 3";               
-                         echo '<img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg" alt="Q3" style="width:180px;margin-left: 3%;margin-bottom: 5%;margin-top: 5%">';
+                switch ($Id) {
+                    case 1:
+                        echo '<img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto1.jpg" alt="Q1" style="width:120px;margin-left: 20%;margin-bottom: 5%;margin-top: 5%">';
+                        break;
+                    case 2:
+                        echo '<img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto2.jpg" alt="Q2" style="width:180px;margin-left: 3%;margin-bottom: 5%;margin-top: 5%">';
+                        break;
+                    case 3:
+                        echo '<img src="https://raw.githubusercontent.com/ValdecarlosLZ/Imagens/main/quarto3.jpg" alt="Q3" style="width:180px;margin-left: 3%;margin-bottom: 5%;margin-top: 5%">';
+                        break;
                 }
                 ?>
+
                 <input style="margin-left: 47%;margin-bottom: 5px; border: none; " type="checkbox" name="check">
                 <p>
                     Nome:
@@ -262,12 +261,12 @@
                     Valor:
                     <?php echo $Valor ?>
                 </p>
-                
-                <input type="number" name="QT1" id="quantidade" >
+
+                <input type="number" name="QT1" id="quantidade">
                 <h3>Quantidade de pessoas</h3>
                 <input type="number" id="pessoas" name="pessoa">
             </fieldset>
-            
+
         <?php } ?>
         <input type="submit" id="button" value="Concluir">
     </form>
