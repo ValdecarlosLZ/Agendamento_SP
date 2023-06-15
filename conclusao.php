@@ -1,7 +1,7 @@
 <?php
 include "conexao.php";
 
-$buscar_cadastro = "SELECT * FROM Dados_pessoais WHERE iddados_pessoais = 10";
+$buscar_cadastro = "SELECT * FROM Dados_pessoais ORDER BY id DESC LIMIT 1";
 
 $stmt = $conexao->prepare($buscar_cadastro);
 
