@@ -248,7 +248,7 @@
                 }
                 ?>
 
-                <input style="margin-left: 47%;margin-bottom: 5px; border: none; " type="checkbox" name="check">
+                <input style="margin-left: 47%;margin-bottom: 5px; border: none; " type="checkbox" name="check" value="<?php echo $Id; ?>">
                 <p>
                     Nome:
                     <?php echo $Nome ?>

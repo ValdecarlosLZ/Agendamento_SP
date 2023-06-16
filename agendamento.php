@@ -3,7 +3,6 @@ session_start();
 
 include "conexao.php";
 
-
 //Leitura de dados
 
 $name = $_POST['name'];
